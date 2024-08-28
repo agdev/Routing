@@ -1,0 +1,1 @@
+The goal of this project is to compare various ways to route users' interaction with model to more concrete area route that subsequent dealing/context can be created or retreived with better  precision
