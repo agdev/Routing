@@ -20,18 +20,18 @@ So essentially we are comparing [AIEnthusiast369/customer-support-categ_classifi
 For comparison code see [Routing_Comparison_Finetuned_vs_Semantic_Router.ipynb](https://github.com/agdev/Routing/blob/main/Routing_Comparison_Finetuned_vs_Semantic_Router.ipynb)
 
 ## Results
-Accuracy wise performance of both models is almost identical, However in concrete application it might vary due to [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). not able to classify some request that might be a positive or negative depends on needs of an application  
+Accuracy wise performance of both models is almost identical, However in concrete application it might vary due to [Semantic router](https://github.com/aurelio-labs/semantic-router/) not able to classify some request that might be a positive or negative depends on needs of an application  
 
 | Model          | Data                        | Accuracy       |
 |------------------|------------------------------------|--------------|
 | [AIEnthusiast369/customer-support-categ_classification-albert_v2](https://huggingface.co/AIEnthusiast369/customer-support-categ_classification-albert_v2)   | Test dataset | 0.9996279069767442  |
-| [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | Test dataset    | 0.9994418604651163  |
+| [Semantic router](https://github.com/aurelio-labs/semantic-router/) | Test dataset    | 0.9994418604651163  |
 | [AIEnthusiast369/customer-support-categ_classification-albert_v2](https://huggingface.co/AIEnthusiast369/customer-support-categ_classification-albert_v2)   | Synthetic data created by LLM | 0.64  |
-| [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | Synthetic data created by LLM    | 0.64  |
+| [Semantic router](https://github.com/aurelio-labs/semantic-router/) | Synthetic data created by LLM    | 0.64  |
 
 
 ## Conculusion
-Both models are resource-efficient. Given the similar performance, I recommend starting with [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). due to its ease of use without additional fine-tuning.
+Both are resource-efficient. Given the similar performance, I recommend starting with [Semantic router](https://github.com/aurelio-labs/semantic-router/) due to its ease of use without additional fine-tuning.
 
 ## License
 This project is licensed under the ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
